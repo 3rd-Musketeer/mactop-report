@@ -13,9 +13,14 @@ dependencies = [
     "requests (>=2.0)",
     "textual (>=0.1.18)",
     "pandas (>=2.2.3,<3.0.0)",
-    "numpy (>=2.2.4,<3.0.0)"
+    "numpy (>=2.2.4,<3.0.0)",
+    "pytest>=8.3.5",
+    "polars>=1.26.0",
+    "click>=8.1.7",
 ]
 
+[project.scripts]
+mactop-report = "mactop_report.cli:cli"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
